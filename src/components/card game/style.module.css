@@ -1,0 +1,28 @@
+.game {
+    height: 350px;
+    width: 300px;
+    background: lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+               
+  }
+
+.img {
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 20px;
+    color: black;
+}
