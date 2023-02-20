@@ -10,30 +10,20 @@ import Game from './components/pages/TicTacToe/Game';
 
 import Quiz from './components/pages/Quiz/Quiz';
 
-//import Form from  './/components/Forms/Form';
-
-import RegForm from './components/Forms/RegForm';
+import Header  from './components/header/header';
 
 import './App.css';
 
 
-const onFormSubmit = (data) => {
-   console.log(data);
-}
+//const onFormSubmit = (data) => {
+ //console.log(data);
+//}
 
 function App() {
   return (
    
    <div>
-      
-     <header className = 'App-header'>
-         
-         <div><RegForm onFormSubmit = {onFormSubmit}/></div>
-         <Link to="/"><div className = 'title'>MINI GAMES</div></Link>
-         
-
-      </header> 
-     
+     <Header/>
       <main className='App-main'>
       <Routes>
          <Route path ='/' element ={<Catalog />}></Route>

@@ -38,9 +38,9 @@ const questions = [
      questionText: 'Что не является языком программирования?',
      answerOptions: [
          {answerText: 'Go', isCorrect: false},
-         {answerText: 'Java Script', isCorrect: true},
+         {answerText: 'Java Script', isCorrect: false},
          {answerText: 'Python', isCorrect: false},
-         {answerText: 'Html', isCorrect: false},
+         {answerText: 'Html', isCorrect: true},
      ]
  },
  

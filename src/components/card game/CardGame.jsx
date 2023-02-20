@@ -10,7 +10,7 @@ const CardGame = ({ name, img, description }) => {
         <div className = {style.name}>{name}</div>
         <div className= {style.description}>{description}</div>
     </div>
-    )
+    );
 }
 
 export default CardGame;

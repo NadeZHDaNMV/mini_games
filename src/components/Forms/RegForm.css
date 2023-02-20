@@ -1,14 +1,39 @@
 .form {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     gap: 10px;
-    max-width: 150px;
-    height: 20px;
-    margin: 10px;
+    max-width: 100px;
+    height: 30px;
 }
 
 .error {
-    font-size: 10px;
-    color: blue;
- }
+    font-size: 14px;
+    color: black;
+}
+
+.btn__reg {
+    font-size: 14px;
+    color: black;
+    background: lightcoral;
+    border: none;
+    border-radius: 6px; 
+    width: 100px;
+    font-family: Orbitron;
+    fontsize: 16px;
+}
+
+.btn__reg:hover {
+    background: lightgreen;
+    transition: all 0.2 ease;
+    color: black;
+    cursor: pointer;
+}
+
+input {
+    background: orange;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+}
