@@ -10,11 +10,10 @@ import './header.css';
 const Header = () => {
     return (
     <>
-    <Link to="/"><header className='header'>
-        MINI GAMES
+    <header className='header'>
+    <Link to="/">MINI GAMES</Link>
         <RegForm />
         </header>
-    </Link>
     </>
  );
 }

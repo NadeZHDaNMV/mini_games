@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { useForm} from 'react-hook-form';
 
@@ -7,7 +7,6 @@ import '../Forms/RegForm.css';
 
 const RegForm = () => {
 
-  
     const {
     register, 
     handleSubmit, 
@@ -19,8 +18,11 @@ const RegForm = () => {
   /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 
   const onSubmit = (data) => {
-    console.log(data);
+    alert(JSON.stringify(data));
+    reset();
+    localStorage.setItem('user', JSON.stringify(data));
   } 
+
 
     return (
         <form className = 'form' onSubmit = {handleSubmit(onSubmit)}>
@@ -29,6 +31,7 @@ const RegForm = () => {
             {...register('name', {required: true, minLength: {value: 3, message: 'Минимум 3 символа' }})} 
             type ='text' 
             placeholder = 'Enter your nickname'
+            autocomplete = 'off'
             
             />
              {errors?.name && <div className='error'>{errors.name.message}</div>}
@@ -39,6 +42,7 @@ const RegForm = () => {
             {...register('email', {required: true, pattern: {value: emailRegex, message: 'Почта в формате email@mail.com'} })} 
             type ='text' 
             placeholder = 'Enter your email' 
+            autocomplete = 'off'
             
             />
             {errors?.email && <div className='error'>{errors.email.message}</div>}
@@ -49,6 +53,7 @@ const RegForm = () => {
             {...register('password', {required: true, minLength: {value: 8, message: 'Минимум 8 символов'} })} 
             type ='password' 
             placeholder = 'Enter your password' 
+            autocomplete = 'off'
             
             />
             {errors?.password && <div className='error'>{errors.password.message}</div>}
