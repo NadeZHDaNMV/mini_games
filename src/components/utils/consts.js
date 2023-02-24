@@ -14,7 +14,7 @@ export const GAMES = [
     {
     name: "memory",
     description: "Проверь свою память",
-    /*img: 'https://play-lh.googleusercontent.com/VixmJODU1y3uNgJVHXOyqfV63No1A_qi8QgSv_goqy5I8QogG-fBDPtRUk-drZ-TSYc'*/
-    img: "./snake2.png"
+    img: 'https://play-lh.googleusercontent.com/VixmJODU1y3uNgJVHXOyqfV63No1A_qi8QgSv_goqy5I8QogG-fBDPtRUk-drZ-TSYc'
+    /*img: 'https://supremelearning.ru/wp-content/uploads/2019/12/467149_original.jpg'*/
     }
 ]
