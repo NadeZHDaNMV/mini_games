@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import {Routes, Route} from 'react-router-dom';
 
+import { setItem, getItem } from './components/utils/localStorage';
+
 import Catalog from './components/pages/Catalog/Catalog';
 
 import Game from './components/pages/TicTacToe/Game';
@@ -20,6 +22,10 @@ import './App.css';
 //}
 
 function App() {
+
+  const handleRegistrtion = (newUser) => {
+   const users = getItem('users');
+  } 
   return (
    
    <div>

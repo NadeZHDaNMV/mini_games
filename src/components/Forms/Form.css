@@ -1,7 +1,0 @@
-.form {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    max-width: 150px;
-    height: 20px;
-}

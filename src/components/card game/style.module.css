@@ -1,7 +1,7 @@
 .game {
-    height: 350px;
-    width: 300px;
-    background: lightskyblue;
+    height:350px;
+    width: 350px;
+    background: lightblue;
     border-radius: 6px;
     box-shadow: 10px -10px 1em black;
 
@@ -15,13 +15,13 @@
   }
 
 .game:hover {
-    background: lime;
+    transform: scale(1.1);
     transition: 0.2s ease;
 }
 
 .img {
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
 }
 
 .name {

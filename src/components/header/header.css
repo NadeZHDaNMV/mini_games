@@ -1,15 +1,15 @@
 .header {
     background-color: whitesmoke;
-    height: 15vh;
+    height: 20vh;
     max-width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction:column;
-    gap: 10px;
+    gap: 7px;
     align-items: center;
     color: darkslateblue;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'Orbitron', sans-serif;
 }
 
