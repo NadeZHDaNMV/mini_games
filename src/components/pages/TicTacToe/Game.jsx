@@ -35,7 +35,7 @@ const Game = () => {
         const startNewGame = () => {
             return (
                 <button className = 'start__btn' onClick = {() => setBoard(Array(9).fill(null))}>
-                    START NEW GAME
+                START NEW GAME
                 </button>
             )
         }

@@ -4,12 +4,13 @@
     justify-content: center;
     gap: 10px;
     max-width: 100px;
-    height: 30px;
+    height: 40px;
 }
 
 .error {
     font-size: 10px;
     color: rgb(221, 28, 70);
+    
 }
 
 .btn__reg {

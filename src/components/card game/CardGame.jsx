@@ -8,7 +8,7 @@ const CardGame = ({ name, img, description }) => {
     <div className = {style.game}>
         <img src={img} alt={description} className = {style.img}/>
         <div className = {style.name}>{name}</div>
-        <div className= {style.description}>{description}</div>
+        <div className = {style.description}>{description}</div>
     </div>
     );
 }

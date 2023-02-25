@@ -7,7 +7,7 @@ import '../Forms/RegForm.css';
 
 const RegForm = () => {
 
-    const {
+  const {
     register, 
     handleSubmit, 
     reset,
@@ -59,7 +59,7 @@ const RegForm = () => {
             {errors?.password && <div className='error'>{errors.password.message}</div>}
             </div>
 
-            <button className = 'btn__reg' type = 'submit'>Play</button>
+            <button className = 'btn__reg' type = 'submit'>Enter</button>
             
           
           </form>

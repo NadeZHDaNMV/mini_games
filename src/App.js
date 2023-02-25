@@ -1,10 +1,6 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 import {Routes, Route} from 'react-router-dom';
-
-import { setItem, getItem } from './components/utils/localStorage';
 
 import Catalog from './components/pages/Catalog/Catalog';
 
@@ -17,21 +13,17 @@ import Header  from './components/header/header';
 import './App.css';
 
 
-//const onFormSubmit = (data) => {
- //console.log(data);
-//}
-
 function App() {
 
-  const handleRegistrtion = (newUser) => {
-   const users = getItem('users');
-  } 
+  
+   useEffect (() => alert('Welcome! Click one of the games to start playing.'), []); 
+   
   return (
    
    <div>
      <Header/>
       <main className='App-main'>
-      <Routes>
+         <Routes>
          <Route path ='/' element ={<Catalog />}></Route>
          <Route path ='/game/tictactoe' element ={<Game/>}></Route>
          <Route path ='/game/quiz' element ={<Quiz/>}></Route>
@@ -39,7 +31,8 @@ function App() {
       </Routes>
       </main>
    </div>
-   );                
+   );    
+           
 }
 
 export default App;

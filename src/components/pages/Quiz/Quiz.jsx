@@ -57,7 +57,7 @@ const handleAnswerOptionClick = (isCorrect) => {
         setScore(score + 1)
     }
 
-    const nextQuestion = currentQuestion + 1;
+const nextQuestion = currentQuestion + 1;
 
     if(nextQuestion < questions.length) {
         setCurrentQuestion (nextQuestion)
@@ -65,7 +65,7 @@ const handleAnswerOptionClick = (isCorrect) => {
         setShowScore (true)
     }
 }
-    const refresh = () => {
+const refresh = () => {
         setCurrentQuestion (0);
         setScore (0);
         setShowScore (false);
