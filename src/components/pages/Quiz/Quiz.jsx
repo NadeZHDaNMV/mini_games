@@ -98,6 +98,7 @@ const refresh = () => {
                 {questions[currentQuestion].answerOptions.map(item => (
                 <button className = "answer__btn" onClick = {() => handleAnswerOptionClick(item.isCorrect)}>{item.answerText}</button>)
                 )}
+                <div className="answer__money">Вы заработали ${money}</div>
                 </div>
               </div> 
         }              

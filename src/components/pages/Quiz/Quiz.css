@@ -89,3 +89,8 @@
     width: 100%;
 }
 
+.answer__money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
