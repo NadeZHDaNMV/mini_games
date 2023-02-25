@@ -1,5 +1,5 @@
 .qwz {
-    background: #252d42;
+    background: rgb(27, 27, 77);
     width: 450px;
     min-height: 200px;
     border-radius: 15px;
@@ -19,7 +19,7 @@
     border-radius: 15px;
     padding: 5px;
     cursor: pointer;
-    border: 2px solid #234668;
+    border: 2px solid yellow;
     margin: 5px 0;
     outline: 0;
     margin-top: 25px;
@@ -40,7 +40,7 @@
     border-radius: 15px;
     padding: 5px;
     cursor: pointer;
-    border: 2px solid #234668;
+    border: 2px solid yellow;
     margin: 5px 0;
     outline: 0;
 }

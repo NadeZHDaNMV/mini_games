@@ -5,12 +5,12 @@ import '../Quiz/Quiz.css';
 
 const questions = [
     {
-     questionText: 'Столица США?',
+     questionText: 'В каком фильме Леонардо ДиКаприо сыграл главную роль?',
      answerOptions: [
-         {answerText: 'Бостон', isCorrect: false},
-         {answerText: 'Вашингтон', isCorrect: true},
-         {answerText: 'Нью-Йорк', isCorrect: false},
-         {answerText: 'Лос-Анджелес', isCorrect: false},
+         {answerText: 'Титаник', isCorrect: true},
+         {answerText: 'Она написала убийство', isCorrect: false},
+         {answerText: 'Один дома', isCorrect: false},
+         {answerText: 'Крепкий орешек', isCorrect: false},
      ]
  },
  
@@ -18,19 +18,19 @@ const questions = [
      questionText: 'Какая компания разработала React?',
      answerOptions: [
          {answerText: 'Amazon', isCorrect: false},
-         {answerText: 'Mail', isCorrect: true},
+         {answerText: 'Mail', isCorrect: false},
          {answerText: 'Facebook', isCorrect: true},
          {answerText: 'Google', isCorrect: false},
      ]
  },
  
      {
-     questionText: 'Что НЕ относится ко вселенной Marvel?',
+     questionText: 'Кто НЕ относится к людям Х?',
      answerOptions: [
-         {answerText: 'Бэтмен', isCorrect: true},
-         {answerText: 'Халк', isCorrect: true},
-         {answerText: 'Мстители', isCorrect: false},
-         {answerText: 'Железный человек', isCorrect: false},
+         {answerText: 'Человек-паук', isCorrect: true},
+         {answerText: 'Магнетто', isCorrect: false},
+         {answerText: 'Зверь', isCorrect: false},
+         {answerText: 'Джин', isCorrect: false},
      ]
  },
  
@@ -51,10 +51,12 @@ const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState (0);
     const [score, setScore] = useState (0);
     const [showScore, setShowScore] = useState (false);
+    const [money, setMoney] = useState (0);
 
 const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
         setScore(score + 1)
+        setMoney(money + 150)
     }
 
 const nextQuestion = currentQuestion + 1;
@@ -69,6 +71,7 @@ const refresh = () => {
         setCurrentQuestion (0);
         setScore (0);
         setShowScore (false);
+        setMoney (0);
     }
    
     return (
@@ -77,10 +80,11 @@ const refresh = () => {
             showScore 
             ? <div className="section__score">
                 <div>Правильных ответов {score} из {questions.length}</div>
+                <div>Вы заработали ${money}</div>
                 <button 
                 className = "refresh__btn"
                 onClick = {refresh}
-                >Попробовать ещё раз...</button>
+                >Попробовать ещё раз?</button>
               </div>
             : 
              <div className = 'quizz'>
